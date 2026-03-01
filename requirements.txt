@@ -7,3 +7,4 @@ seaborn
 yfinance
 streamlit
 scikit-learn
+altair<5
