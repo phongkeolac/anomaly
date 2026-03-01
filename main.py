@@ -80,4 +80,7 @@ if st.sidebar.button("Phân tích"):
         # Hiển thị dữ liệu chi tiết lý do Outlier
         if not outliers.empty:
             st.write("### Phân tích chi tiết các điểm Outlier")
-            st.dataframe(outliers[['Close', 'reason']])
+            outliers_display = outliers[['Close', 'reason']].copy()
+            outliers_display['reason'] = outliers_display['reason'].astype(object)
+
+            st.dataframe(outliers_display)

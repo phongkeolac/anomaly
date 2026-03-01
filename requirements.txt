@@ -8,3 +8,4 @@ yfinance
 streamlit
 scikit-learn
 altair<5
+pyarrow<15.0.0
